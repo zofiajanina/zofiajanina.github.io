@@ -1,0 +1,58 @@
+.mygrid {
+    width: 600px;
+    display: grid;
+     grid-gap: 10px;
+    margin:10px auto;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 40px 20px 300px 300px ;
+    grid-template-areas: "header header header"
+                       "a b c"
+                        "article article article" 
+                               "d d d";
+}
+
+
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: 1px solid cyan;
+}
+
+header {
+    grid-area:header;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+    
+    
+}
+article {
+    grid-area: article;}
+
+
+.d{
+    grid-area: d
+}
+    
+    
+    
+.mygrid:hover {
+    opacity: 0.2;
+}
+
+.mygrid>* {
+    border: 1px solid cyan;
+}
+Digite uma mensagem...
+
