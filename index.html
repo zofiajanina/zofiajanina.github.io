@@ -4,8 +4,12 @@
 <head>
     <title>CSS exercise</title>
     <meta charset="utf8" />
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+     
+      
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+   <link rel="stylesheet" href="style.css" />
     <style>
         html,
         body {
@@ -27,18 +31,34 @@
    <div class="a">illustration</div>
         <div class="b">lettering and caligaphy</div>
         <div class="c">books</div>
-        <div class="f">  <img src="29780016.jpg" alt="">
-            
-        </div>
+      
         <article> about</article>
         <div class="d">contact</div>
-        
+        <a href="mailto:zofia.janina@gmail.com">contact</a>
        
         
         
         
         
     </div>
+    
+<div class="your-class">
+  <div><img src="29780016.jpg" alt=""></div>
+  <div><img src="29780016.jpg" alt=""></div>
+  <div>your content</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+          centerMode: true,
+          autoplay: true
+      });
+    });
+  </script>
 
 </body>
 
