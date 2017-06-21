@@ -4,20 +4,21 @@
      grid-gap: 10px;
     margin:10px auto;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 40px 20px 300px 300px ;
+    grid-template-rows: 40px 20px 300px 300px 100px ;
     grid-template-areas: "header header header"
                        "a b c"
+        "f f f"
                         "article article article" 
                                "d d d";
 }
 
 
 .mygrid:hover {
-    opacity: 0.2;
+    opacity: 1;
 }
 
 .mygrid>* {
-    border: 1px solid cyan;
+    border: 0px solid cyan;
 }
 
 header {
@@ -42,17 +43,22 @@ article {
 
 
 .d{
-    grid-area: d
+    grid-area: d;
 }
     
+.f{
+    grid-area: f;
+}
     
     
 .mygrid:hover {
-    opacity: 0.2;
+    opacity: 1;
 }
 
 .mygrid>* {
-    border: 1px solid cyan;
+    border: 0px solid cyan;
 }
-Digite uma mensagem...
 
+.f img{
+    width: 100%
+}
