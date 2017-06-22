@@ -1,15 +1,18 @@
+.your-class{
+    width: 100%;
+    margin: 0;
+}
+
 .mygrid {
     width: 600px;
     display: grid;
      grid-gap: 10px;
     margin:10px auto;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 40px 20px 300px 300px 100px ;
-    grid-template-areas: "header header header"
-                       "a b c"
-        "f f f"
-                        "article article article" 
-                               "d d d";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 20px 30px 30px 10px ;
+    grid-template-areas: "header header header "
+                       "a b c "
+        
 }
 
 
@@ -23,10 +26,36 @@
 
 header {
     grid-area:header;
+    top: 20px;
+    text-align: center;
+    color: black
 }
 
+a:link {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: blue;
+}
+
+
+a:active {
+    color: blue;
+}
 .a {
     grid-area: a;
+   
 }
 
 .b{
